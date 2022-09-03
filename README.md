@@ -1,7 +1,7 @@
 # Sign up form project
 
 
-Project from The Odin Project [Foundations course](https://www.theodinproject.com/paths/foundations/courses/foundations)
+Project from The Odin Project [Intermediate HTML and CSS](https://www.theodinproject.com/paths/full-stack-javascript/courses/intermediate-html-and-css)
 
 
 HTML, CSS.
