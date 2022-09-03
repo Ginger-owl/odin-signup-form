@@ -1,0 +1,279 @@
+:root {
+    --base-font-size: 16px;
+    --main-bg-color: rgb(250 250 250);
+    --form-bg-color: #ffffff;
+    --picture-text-color: var(--main-bg-color);
+    --text-color: #353535;
+    --button-color: #596D48;
+    --button-color-hover: #d07c02;
+    --button-color-active: #af6903;
+    --input-border-invalid: #d22828;
+}
+
+@font-face {
+  font-family: 'Norse Bold';
+  src: url('static/Norse-Bold.otf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: var(--base-font-size);
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    min-width: 375px;
+}
+
+/* Picture section*/
+.picture-section {
+    background: url('static/bg_cover_spines_lg.jpg');
+    background-size: cover;
+    background-position: center center;
+    width: 37%;
+    height: 120vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.picture-frame {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: flex-end;
+    background-color: rgb(0 0 0 / 15%);
+    margin-top: 38vh;
+    padding: 0.5em;
+}
+
+.picture-logo {
+    border-style: none;
+    width: 90px;
+}
+
+.picture-heading {
+    font-family: 'Norse Bold', Arial;
+    font-size: 7em;
+    line-height: .85em;
+}
+
+.picture-ref {
+  padding: 0.25em;
+  width: 100%;
+  text-align: center;
+  color: rgb(224 224 224 / 90%);
+  background-color: rgb(10 10 10 /30%);
+  box-shadow: 0 0 30px 40px rgb(10 10 10 / 30%);
+}
+
+.ref-link-inline {
+    color: rgb(224 224 224 / 90%);
+    text-decoration: underline;
+}
+
+.ref-link-inline:hover {
+    text-decoration: none;
+    color:  rgb(255 255 255);
+}
+.ref-link-inline:visited {
+    text-decoration: underline;
+}
+/* Form section */
+
+.section-form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    row-gap: 4em;
+    width: 63%;
+    height: 100%;
+    background-color: var(--main-bg-color);
+    position: relative;
+    padding-bottom: 10vh;
+}
+
+.form-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 20%;
+    font-weight: bold;
+    font-size: 1.4em;
+    text-align: justify;
+    padding-left: 2rem;
+    color: var(--text-color);
+    padding-right: 20%;
+    min-width: 90%;
+    line-height: 1.15em;
+}
+
+.form-queries {
+    padding: 1em 2em;
+    background-color: white;
+    box-shadow: 0 0.1em 0.3em #898989;
+}
+
+.form-row {
+    display: flex;
+    min-width: 60vw;
+    width: 100%;
+    justify-content: flex-start;
+    gap: 1vmax;
+    margin: .25em 0;
+}
+
+.form-header {
+    font-size: 1.3em;
+    margin-bottom: 0.75em;
+    color: #454545;
+}
+
+.form-query {
+    min-width: 140px;
+    width: 40%;
+    padding: 0.35em 0.5em 0.625em 0em;
+    border: none;
+    display: block;
+}
+
+.form-elem {
+    display: block;
+    width: 100%;
+}
+
+.form-label {
+  font-size: 0.7em;
+  min-width: 150px;
+  font-weight: 600;
+  color: #555555;
+}
+
+.form-input {
+    border-radius: .25em;
+    min-width: 150px;
+    border: .1em solid #9b9b9b;
+    padding: .25em .5em;
+    position: relative;
+}
+
+
+.form-input:valid {
+    border: .1em solid #3ff332;
+}
+
+/* .form-input:invalid {
+    border: .1em solid #d22828;
+} */
+
+.form-query:focus-within .form-label {
+    font-size: .8em;
+    transition: 0.8s;
+    position: relative;
+    top: 0.1em;
+}
+
+.form-button {
+    position: relative;
+    font-size: 1.1em;
+    margin-left: 2rem;
+    padding: 0.75em 3em;
+    background-color: var(--button-color);
+    color: #f9f9f9;
+    border-radius: 0.4em;
+    border: none;
+    width: fit-content;
+    box-shadow: 0 0.1em 0.3em #898989;
+  transition: 0.5s;
+    
+}
+
+.form-button:hover {
+    background-color: var(--button-color-hover);
+    position: relative;
+    top: .1em;
+    transition: .5s;
+    
+}
+
+.form-button:active {
+    background-color: var(--button-color-active);
+    position: relative;
+    top: .2em;
+    transition: .25s;
+}
+
+.form-subtext {
+    padding-left: 2em;
+    padding-right: 15%;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+.error {
+    border: .1em solid var(--input-border-invalid);
+}
+
+.form-link-inline {
+    text-decoration: none;
+    color: #596D48;
+}
+
+.form-link-inline:hover {
+    text-decoration: underline;
+    color: #596D48;
+}
+
+@media screen and (max-width: 643px) {
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        width: 100vw;
+        height: auto;
+    }
+
+    .picture-section {
+      background: url('static/bg_cover_spines_sm.jpg');
+      background-position: center center;
+      width: 100%;
+      height: 25vh;
+      display: flex;
+    }
+    .picture-frame {
+      margin-top: 4vh;
+      padding: 0.1em;
+    }
+    .picture-logo {
+      width: 60px;
+    }
+    .picture-heading {
+      font-size: 4.5em;
+    }
+    .section-form {
+      gap: 1em;
+      width: 100%;
+    }
+    .form-row {
+        flex-direction: column;
+    }
+    .form-intro {
+      padding: 1em;
+      width: 45%;
+    }
+    .form-query {
+      width: 80%;
+    }
+}

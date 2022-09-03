@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/Norse-Bold.otf">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Sign Up Form The Odin Project</title>
+</head>
+<body>
+    <main>
+        <section class="container">
+            <section class="picture-section">
+                <div class="picture-frame">
+                    <img class="picture-logo" src="static/odin-lined.png" alt="The Odin Project logo">
+                    <h2 class="picture-heading">Odin</h2>
+                </div>
+                <p class="picture-ref">Photo by <a class="ref-link-inline" href="https://unsplash.com/@akmaralhood" target="_blank">Halie West</a> on <a class="ref-link-inline" href="https://unsplash.com/" target="_blank">unsplash</a></p>
+            </section>
+            <section class="section-form">
+                <div class="form-intro">
+                    <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br/> Sign up <em>now</em> to get started.</p>
+                    <p>You <em>know</em> you want to.</p>    
+                </div>
+                <form action="#" method="get" class="form-queries" id="signup-form">
+                    <h3 class="form-header">Let's do this!</h3>
+                    <div class="form-row">
+                        <fieldset class="form-query">
+                            <label class="form-elem form-label" for="last_name">FIRST NAME</label>
+                            <input class="form-elem form-input" type="text" name="first_name" id="first_name" autocomplete="off" required>
+                        </fieldset >
+                        <fieldset class="form-query">
+                            <label class="form-elem form-label" for="last_name">LAST NAME</label>
+                            <input class="form-elem form-input" type="text" name="last_name" id="last_name" autocomplete="off" required>
+                        </fieldset>
+                    </div>
+                    <div class="form-row">
+                        <fieldset class="form-query">
+                            <label class="form-elem form-label" for="email">EMAIL</label>
+                            <input class="form-elem form-input" type="email" name="email" id="email" autocomplete="off" required>
+                        </fieldset>
+                        <fieldset class="form-query">
+                            <label class="form-elem form-label" for="phone_number">PHONE NUMBER</label>
+                            <input class="form-elem form-input" type="tel" name="phone_number" id="phone_number" autocomplete="off"required>
+                        </fieldset>
+                    </div>
+                    <div class="form-row">
+                        <fieldset class="form-query">
+                            <label class="form-elem form-label" for="password">PASSWORD</label>
+                            <input class="form-elem form-input error" type="password" name="password" id="password" minlength="1" maxlength="31" autocomplete="off" required>
+                        </fieldset>
+                        <fieldset class="form-query">
+                            <label class="form-elem form-label" for="password_check">CONFIRM PASSWORD</label>
+                            <input class="form-elem form-input error" type="password" name="password_check" id="password_check" minlength="1" maxlength="31" autocomplete="off" required>
+                        </fieldset>
+                    </div>
+                </form>
+                <button class="form-button" type="submit" form="signup-form" value="submit">Creat Account</button>
+                <p class="form-subtext">Already have an acoount? <a class="form-link-inline" href="#">Log in</a></p>
+            </section>
+        </section>                
+    </main>
+</body>
+</html>
